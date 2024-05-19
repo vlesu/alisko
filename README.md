@@ -40,7 +40,7 @@ Video lesson: https://youtu.be/qKV0yORRBT0
 8. Terminate the browser session by clicking the cross on the test execution panel, and run the entire test by clicking the play button - it will start and run!
 9. On the left side of the window, completed and successfully completed tests will be shown in green
 
-Additional information can be found in docs/docs.md file
+Additional information can be found in [documentation](docs/docs.md) 
 
 # Development
 
