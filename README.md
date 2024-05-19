@@ -14,7 +14,7 @@ Alisko is a playwright-based web testing framework designed to simplify automate
 8. Alisko is open source - use it and let's make our websites work reliably.
 
 
-# Installation from distribution
+# Installation from binary distribution
 
 1. Go to the [Releases page](https://github.com/vlesu/alisko/releases)
 2. Download the Alisko distribution corresponding to your operating system
