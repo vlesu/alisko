@@ -54,4 +54,4 @@ If you want to completely outsource the automated testing of your project to our
 
 Alisko's source code is fully published under a license that allows its use in your commercial projects.
 
-If you want to build a distribution from source code, the approximate build order for different systems is given in the [the build instructions](alisko/blob/main/docs/build.md) file
+If you want to build a distribution from source code, the approximate build order for different systems is given in the [build instructions](docs/build.md) 
