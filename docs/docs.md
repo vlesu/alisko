@@ -42,3 +42,11 @@ The number of simultaneously running tests is limited so as not to overload the 
 Playwright does not recognize icons, this is a function of the alisko wrapper. For this task we have a neural network under the hood.
 
 If Alisko was unable to find a suitable text locator for the click, it tries to recognize the screenshot of the page and identify the icons it is familiar with (regardless of the color and style of the icon). If your click hits the icon, Alisko will write in the test code “here you will need to recognize the screenshot and click on the icon with a semantic meaning...”. It will even continue to work if the designer changes one magnifying glass icon to another!
+
+# Mailcatcher 
+
+to be documented
+
+# Common include files per-project
+
+to be documented
