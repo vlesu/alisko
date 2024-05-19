@@ -16,7 +16,7 @@ Alisko is a playwright-based web testing framework designed to simplify automate
 
 # Installation from distribution
 
-1. Go to the page https://alisko.vlesu.com/
+1. Go to the [Releases page](https://github.com/vlesu/alisko/releases)
 2. Download the Alisko distribution corresponding to your operating system
 3. Run it, it will be installed for the current user.
 4. Use it! Internet is not required for Alisko to work.

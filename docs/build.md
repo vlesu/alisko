@@ -18,6 +18,14 @@ npx playwright install
 rmdir /Q /S resources\browsers\firefox-*
 rmdir /Q /S resources\browsers\webkit-*
 rmdir /Q /S resources\browsers\ffmpeg-*
+
+# download 20240219_1280.onnx model for icon detection
+# from https://github.com/vlesu/alisko/releases
+# into resources/models/icons
+
+# copy onnxruntime-common and onnxruntime-node folders
+# from node_modules
+# to resource/node_modules
 ```
 
 ## Start from source code
@@ -53,10 +61,18 @@ npm run make
 ```
 cd ~/ml/alisko2/alisko2-gui
 npm i
-export PLAYWRIGHT_BROWSERS_PATH=/home/asen/ml/alisko2/alisko2-gui/resources/browsers
+export PLAYWRIGHT_BROWSERS_PATH=/home/asen/ml/alisko3/alisko-gui/resources/browsers
 npx playwright install
 rm -Rf ./resources/browsers/firefox-*
 rm -Rf ./resources/browsers/webkit-*
+
+# download 20240219_1280.onnx model for icon detection
+# from https://github.com/vlesu/alisko/releases
+# into resources/models/icons
+
+# copy onnxruntime-common and onnxruntime-node folders
+# from node_modules
+# to resource/node_modules
 ```
 
 ## Test run
@@ -114,6 +130,14 @@ export PLAYWRIGHT_BROWSERS_PATH=/Users/asen/alisko2-gui/resources/browsers
 npx playwright install
 rm -Rf ./resources/browsers/firefox-*
 rm -Rf ./resources/browsers/webkit-*
+
+# download 20240219_1280.onnx model for icon detection
+# from https://github.com/vlesu/alisko/releases
+# into resources/models/icons
+
+# copy onnxruntime-common and onnxruntime-node folders
+# from node_modules
+# to resource/node_modules
 ```
 
 ## test run
