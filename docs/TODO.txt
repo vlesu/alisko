@@ -1,0 +1,5 @@
+
+an attempt to open a previously cached non-existent file from a tree causes a crash
+
+bar on the Alisko browser "command executing..."
+= when the wheel spins on the corresponding test, a bar should also appear on the browser

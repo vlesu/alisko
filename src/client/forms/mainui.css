@@ -1,0 +1,200 @@
+.gutter-horizontal {
+    cursor: col-resize;
+    border-right: 1px dotted #c8c8c8;
+}
+.gutter-vertical {
+    cursor: row-resize;
+    border-bottom: 1px dotted #eeeeee;
+    background: #eeeeee;
+    border-top: 1px dotted #c8c8c8;
+}
+
+.leftPane {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.leftPane div {
+    white-space: nowrap;
+}
+
+.centerPane {
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 10;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.toolbar {
+    flex-grow: 0;
+    display: flex;
+    padding: 2px 5px 3px 5px;
+    border-bottom: #bbb 1px solid;
+}
+.toolbar2 {
+    flex-grow: 0;
+    display: flex;
+    padding: 3px 5px 2px 3px;
+    border-bottom: #bbb 1px solid;
+}
+.vtoolbar {
+    flex-grow: 0;
+    padding: 5px 3px 2px 3px;
+    border-left: #bbb 1px solid;
+    flex-direction: column;
+    display: flex;
+}
+.drawerHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+}
+.drawerHeaderTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.drawerHeaderUsername {
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.drawerBody {
+    flex-grow: 1;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.drawerForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+div.drawerFormItem {
+    margin: 20px 0px 0px 0px;
+}
+.drawerFooter {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.urltoolbar1 {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3px 5px 2px 3px;
+}
+hr.paddedDivider {
+    margin: 5px 2px 5px 2px;
+}
+
+.wContainer {
+    display: flex;
+    flex-grow: 0;
+    position: static;
+}
+.topbar {
+    background: #fff;
+}
+.urltoolbar {
+    padding: 1px;
+}
+.urlbar {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    flex-direction: row;
+}
+.urlInput {
+    border-radius: 20px;
+    flex-grow: 1;
+    background: #eee;
+    border: 3px solid #eee;
+    padding: 8px 20px 8px 20px;
+    height: 20px;
+    font-size: 16px;
+    outline: none;
+    margin: 0px 7px 0px 3px;
+}
+.urlInput:focus {
+    border: 3px solid #bbd;
+    background: #fff;
+}
+.backdrop1 {
+    z-index: 999;
+    color: #fff;
+}
+
+button.rounded-square {
+    border-radius: 10px;
+}
+
+.theTab {
+    padding-left: 24px;
+}
+.theTab button.inTabX {
+    visibility: hidden;
+}
+.theTab:hover button.inTabX {
+    visibility: visible;
+}
+
+div.fileTreeLabel {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.fileTreeRoot {
+    align-items: stretch;
+    flex-direction: column;
+    flex-grow: 1;
+}
+span.labelmark { 
+    position: absolute;
+    right: 10px;
+    display: block;
+    margin-right: -10px;
+    padding: 3px 2px 0px 2px;
+    background-color: rgba(255,255,255,0.9); 
+}
+
+.CUSTOMMARK.ace_start {
+    background-color: rgba(0,255,0,0.3);
+    position: absolute;
+}
+
+.log_ {
+    padding: 5px;
+}
+.log_command {
+    padding: 5px;
+    font-weight: bold;
+    white-space: pre-wrap;
+    background-color: #ccc;
+    margin-top: 20px;
+}
+.log_commandInprocess {
+    padding: 5px;
+    font-weight: bold;
+    background-color: #cfc;
+}
+.log_error {
+    padding: 5px;
+    background-color: #fcc;
+}
+.log_output {
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.log_info {
+    padding: 5px;
+}
