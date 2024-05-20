@@ -166,16 +166,14 @@ cd out/Alisko-darwin-arm64
 ./Alisko
 ```
 
-## Build release under m1
+## Build release  arm64
+```
 export GENERATE_SOURCEMAP=false
 export NODE_INSTALLER=npm
 export NODE_ENV=production
 npm run make
-
-## Build for mac-x64 
-``` (not working, require to have more data)
-npm run make -- --arch=x64 --platform=darwin
 ```
+
 
 
 ## publish MAC
@@ -235,24 +233,16 @@ cd out/Alisko-darwin-arm64
 ./Alisko
 ```
 
-## Build release under m1
+## Build release 
+```
 export GENERATE_SOURCEMAP=false
 export NODE_INSTALLER=npm
 export NODE_ENV=production
 npm run make
+```
 
 ## Build for mac-x64 
-``` (not working, require to have more data)
+``` 
 npm run make 
-npm run make -- --arch=x64 --platform=darwin
-```
-
-
-## publish MAC
-```
-ls -al out/make/zip/darwin/arm64/Alisko-darwin-arm64-*.zip
-scp out/make/zip/darwin/arm64/Alisko-darwin-arm64-*.zip root@vlesu.com:/var/www/alisko/www/updates/mac/
-scp out/make/zip/darwin/x64/Alisko-darwin-x64-*.zip root@vlesu.com:/var/www/alisko/www/updates/mac/
-# change version in http://alisko.vlesu.net/index.htm
 ```
 
