@@ -43,10 +43,16 @@ Playwright does not recognize icons, this is a function of the alisko wrapper. F
 
 If Alisko was unable to find a suitable text locator for the click, it tries to recognize the screenshot of the page and identify the icons it is familiar with (regardless of the color and style of the icon). If your click hits the icon, Alisko will write in the test code “here you will need to recognize the screenshot and click on the icon with a semantic meaning...”. It will even continue to work if the designer changes one magnifying glass icon to another!
 
+# Common include files per-project
+
+If "autoload.js" file present in main project folder, it will be injected in test context before every test start.
+
+So, if you want to declare common functions, just place it into autoload.js
+
+If in autoload.js declared function beforeTest(), it will be executed before every test start.
+Please place in function beforeTest() any common pre-requirements for every test.
+
 # Mailcatcher 
 
 to be documented
 
-# Common include files per-project
-
-to be documented
