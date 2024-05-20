@@ -126,7 +126,7 @@ sudo npm -i g n
 sudo n latest
 npm i
 
-export PLAYWRIGHT_BROWSERS_PATH=/Users/asen/alisko2-gui/resources/browsers
+export PLAYWRIGHT_BROWSERS_PATH=/Users/asen/alisko3-gui/resources/browsers
 npx playwright install
 rm -Rf ./resources/browsers/firefox-*
 rm -Rf ./resources/browsers/webkit-*
@@ -174,6 +174,76 @@ npm run make
 
 ## Build for mac-x64 
 ``` (not working, require to have more data)
+npm run make -- --arch=x64 --platform=darwin
+```
+
+
+## publish MAC
+```
+ls -al out/make/zip/darwin/arm64/Alisko-darwin-arm64-*.zip
+scp out/make/zip/darwin/arm64/Alisko-darwin-arm64-*.zip root@vlesu.com:/var/www/alisko/www/updates/mac/
+scp out/make/zip/darwin/x64/Alisko-darwin-x64-*.zip root@vlesu.com:/var/www/alisko/www/updates/mac/
+# change version in http://alisko.vlesu.net/index.htm
+```
+
+
+# Build MAC x86 release
+
+## prepare
+```
+# install node (version 20 is working)
+npm i
+
+
+export PLAYWRIGHT_BROWSERS_PATH=/Users/user/asen/alisko3-gui/resources/browsers
+npx playwright install
+rm -Rf ./resources/browsers/firefox-*
+rm -Rf ./resources/browsers/webkit-*
+
+# download 20240219_1280.onnx model for icon detection
+# from https://github.com/vlesu/alisko/releases
+# into resources/models/icons
+
+# copy onnxruntime-common and onnxruntime-node folders
+# from node_modules
+# to resource/node_modules
+```
+
+## test run
+```
+export NODE_INSTALLER=npm
+export NODE_ENV=development
+#export DISPLAY=:0
+#export GTK_IM_MODULE=ibus
+# cat /proc/sys/fs/inotify/max_user_watches
+# echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+# npm i onnxruntime-node
+# mkdir ./resources/node_modules
+# cp -r node_modules/onnxruntime-* ./resources/node_modules/
+# mkdir resources/models
+# mkdir resources/models/icons
+# cp ../artifacts/20240219_1280.onnx ./resources/models/icons/
+npm start
+```
+
+## test package
+```
+# быстренько проверить exe форму без сборки инсталлера:
+npm run package
+# XTerm:
+cd out/Alisko-darwin-arm64
+./Alisko
+```
+
+## Build release under m1
+export GENERATE_SOURCEMAP=false
+export NODE_INSTALLER=npm
+export NODE_ENV=production
+npm run make
+
+## Build for mac-x64 
+``` (not working, require to have more data)
+npm run make 
 npm run make -- --arch=x64 --platform=darwin
 ```
 

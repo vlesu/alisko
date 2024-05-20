@@ -22,9 +22,9 @@ Alisko is a playwright-based web testing framework designed to simplify automate
 4. Use it! Internet is not required for Alisko to work.
 
 We have verified that Alisko works on
-- Window 10
-- Ubuntu
-- Mac OS @ m1
+- Windows 10
+- Ubuntu x86
+- Mac OS @ arm64 and x86
 
 # Basic Usage
 
