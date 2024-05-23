@@ -1,8 +1,10 @@
 # Alisko
 
-Alisko is a playwright-based web testing framework designed to simplify automated testing of websites the way a user would test them.
+Alisko is a playwright-based E2E web testing framework designed to simplify automated testing of websites the way a user would test them.
 
-You perform the necessary actions in the “browser”, and Alisko records all this for you in the form of an autotest.
+You perform the necessary actions in the "browser", and Alisko records all this for you in the form of an autotest.
+
+[Telegram support chat](https://t.me/alisko_chat) | [Releases](https://github.com/vlesu/alisko/releases)
 
 # Description
 
